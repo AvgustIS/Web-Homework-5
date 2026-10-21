@@ -25,6 +25,8 @@ const addItem = document.getElementById("addItembtn");
 addItem.addEventListener("click", () => {
   const ItemAdd = inputItem.value.trim();
   const newLi = document.createElement("li");
+  newLi.className =
+    "bg-slate-50 px-4 py-2 rounded-lg border border-slate-200 text-slate-700";
   newLi.textContent = ItemAdd;
   listHobby.appendChild(newLi);
 });
